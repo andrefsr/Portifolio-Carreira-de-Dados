@@ -63,7 +63,7 @@ Atualmente, meus principais interesses estão concentrados em:
 ### Linguagens
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-000?style=for-the-badge\&logo=MySQL&logoColor=4479A1)
 
 ### Data Science e Machine Learning
 
