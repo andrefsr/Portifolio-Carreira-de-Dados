@@ -1,302 +1,272 @@
-# 📊 Statistical Analysis and Parameter Estimation with Python
+# 👨‍💻 André Fabiano — Data Science Portfolio
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![NumPy](https://img.shields.io/badge/NumPy-Scientific_Computing-blue?logo=numpy)
-![SciPy](https://img.shields.io/badge/SciPy-Optimization-orange?logo=scipy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Data_Visualization-green?logo=matplotlib)
-![Statistics](https://img.shields.io/badge/Statistics-Parameter_Estimation-purple)
+Bem-vindo ao meu portfólio de **Ciência de Dados, Machine Learning e Análise Estatística**.
 
-## 📌 Sobre o projeto
+Este repositório reúne projetos e estudos desenvolvidos com o objetivo de aplicar programação, estatística, matemática e modelagem computacional na resolução de problemas orientados a dados.
 
-Este repositório reúne uma série de estudos e implementações em **probabilidade, estatística e estimação de parâmetros**, desenvolvidos utilizando Python.
-
-O principal objetivo é explorar, de forma computacional, como diferentes **estimadores estatísticos** se comportam quando aplicados a amostras aleatórias provenientes de diferentes distribuições de probabilidade.
-
-Os experimentos utilizam simulações de Monte Carlo, análise de distribuições, comparação entre valores teóricos e amostrais e dois métodos clássicos de estimação:
-
-* **Método dos Momentos (MM)**
-* **Método da Máxima Verossimilhança (MLE)**
-
-Além da implementação matemática, os resultados são apresentados graficamente, permitindo avaliar a diferença entre os parâmetros teóricos e aqueles estimados a partir das amostras.
+Meu objetivo é desenvolver soluções que vão desde a **exploração e tratamento dos dados** até a construção, avaliação e interpretação de modelos estatísticos e de Machine Learning.
 
 ---
 
-## 🎯 Objetivos
+## 🎯 Sobre mim
 
-O projeto tem como principais objetivos:
+Sou **Bacharel em Física**, **Técnico em Eletrotécnica** e atualmente **Mestrando em Engenharia Elétrica pela UFMG**, com interesse em Ciência de Dados, Machine Learning, estatística e computação científica.
 
-* Compreender a relação entre distribuições teóricas e amostras aleatórias;
-* Implementar simulações estatísticas utilizando Python;
-* Calcular média e variância amostrais;
-* Estimar parâmetros desconhecidos;
-* Comparar o **Método dos Momentos** com o **Método da Máxima Verossimilhança**;
-* Avaliar o erro das estimativas;
-* Investigar o comportamento dos estimadores conforme o número de observações aumenta;
-* Desenvolver visualizações para interpretação dos resultados.
+Minha formação em Física e Engenharia proporciona uma base sólida em:
+
+* Matemática;
+* Estatística e probabilidade;
+* Modelagem de sistemas;
+* Métodos numéricos;
+* Programação científica;
+* Análise e interpretação de dados;
+* Resolução de problemas complexos.
+
+Tenho particular interesse em utilizar essa formação para desenvolver soluções orientadas por dados e transformar problemas científicos e de engenharia em problemas computacionais e estatísticos.
 
 ---
 
-## 🧪 Experimentos realizados
+## 🧠 Áreas de interesse
 
-### 1. Estimação de parâmetro de uma distribuição discreta
+Atualmente, meus principais interesses estão concentrados em:
 
-Neste experimento, uma variável aleatória discreta é utilizada para investigar duas abordagens de estimação de um parâmetro desconhecido.
+**Data Science**
 
-Foram implementados:
+* Análise exploratória de dados (EDA)
+* Estatística aplicada
+* Inferência estatística
+* Visualização de dados
+* Feature Engineering
+* Modelagem preditiva
 
-* Média amostral;
+**Machine Learning**
+
+* Aprendizado supervisionado
+* Classificação
+* Regressão
+* Árvores de decisão
+* Random Forest
+* Avaliação e interpretação de modelos
+
+**Computação científica**
+
+* Simulações numéricas
+* Modelagem matemática
+* Processos estocásticos
+* Métodos numéricos
+* Processamento de sinais
+
+---
+
+## 🛠️ Tecnologias e ferramentas
+
+### Linguagens
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge\&logo=cplusplus\&logoColor=white)
+
+### Data Science e Machine Learning
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge\&logo=numpy\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge\&logo=scipy\&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)
+
+### Visualização
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge\&logo=plotly\&logoColor=white)
+
+### Outras ferramentas
+
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge\&logo=jupyter\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
+
+Também possuo experiência com **Excel**, processamento de arquivos HDF5, simulações computacionais e ferramentas utilizadas em modelagem eletromagnética.
+
+---
+
+# 📂 Projetos
+
+Este portfólio está em desenvolvimento e será continuamente atualizado com novos projetos.
+
+## 📊 01 — Teoria da Estimação e Inferência Estatística
+
+Estudos computacionais sobre **probabilidade, estatística e estimação de parâmetros** utilizando Python.
+
+Os notebooks exploram diferentes distribuições de probabilidade e métodos clássicos de estimação, incluindo:
+
 * Método dos Momentos;
-* Máxima Verossimilhança;
-* Simulações com diferentes tamanhos de amostra;
-* Comparação entre os valores estimados e o valor teórico do parâmetro.
+* Máxima Verossimilhança (MLE);
+* Média e variância amostral;
+* Simulações de Monte Carlo;
+* Comparação entre parâmetros teóricos e estimados;
+* Análise de erros;
+* Visualização de distribuições.
 
-Um dos objetivos principais foi observar como os estimadores se comportam conforme o número de observações aumenta.
+**Principais ferramentas:**
 
----
+`Python` · `NumPy` · `SciPy` · `Matplotlib`
 
-### 2. Distribuição de Laplace
-
-Neste experimento são geradas amostras de uma **distribuição de Laplace**.
-
-A distribuição teórica é comparada com o histograma das observações simuladas.
-
-Em seguida, os parâmetros da distribuição são estimados utilizando:
-
-* Método dos Momentos;
-* Máxima Verossimilhança.
-
-Para uma amostra de 100 observações, por exemplo, foram obtidas estimativas próximas dos valores utilizados na geração dos dados.
-
-O experimento permite observar na prática a influência da aleatoriedade da amostra sobre a estimação dos parâmetros.
+📁 [`Teoria da Estimação`](./Teoria%20da%20Estimação/)
 
 ---
 
-### 3. Distribuição Normal
+## 🤖 02 — Detecção de Cilindros Condutores com Machine Learning
 
-Foram geradas amostras de uma distribuição normal e comparadas com sua função densidade de probabilidade teórica.
+Projeto de **Machine Learning aplicado à detecção de objetos enterrados utilizando Ground Penetrating Radar (GPR)**.
 
-O experimento calcula:
+O projeto combina simulação eletromagnética, estatística e aprendizado de máquina.
 
-* Média teórica;
-* Variância teórica;
-* Média amostral;
-* Variância amostral;
-* Erros relativos;
-* Estimativas obtidas pelo Método dos Momentos;
-* Estimativas obtidas pela Máxima Verossimilhança.
+Os dados são obtidos através de simulações do GPR utilizando o **gprMax**, considerando meios heterogêneos modelados como campos aleatórios correlacionados.
 
-Essa comparação permite visualizar a diferença entre os parâmetros da população e aqueles obtidos a partir de uma amostra finita.
+A partir dos sinais simulados são extraídas características estatísticas utilizadas como entrada para modelos de Machine Learning.
 
----
+Entre as características analisadas estão:
 
-### 4. Distribuição Uniforme
+* Média;
+* Variância;
+* Assimetria (skewness);
+* Curtose;
+* Entropia;
+* Transformada de Fourier;
+* Wavelets;
+* Autocorrelação;
+* Atributos de textura.
 
-Neste experimento foram geradas **100.000 observações** de uma distribuição uniforme.
+O problema é formulado como uma tarefa de **classificação supervisionada**, cujo objetivo é determinar se existe ou não um cilindro condutor enterrado no meio.
 
-O histograma das amostras é comparado com a função densidade teórica.
+O projeto utiliza **Random Forest** como modelo de classificação e também explora a importância das características utilizadas pelo modelo.
 
-A partir dos dados simulados são estimados os parâmetros da distribuição utilizando MM e MLE.
+**Principais ferramentas:**
 
-Com um número elevado de observações, as estimativas apresentam erros muito pequenos em relação ao parâmetro utilizado na geração dos dados.
+`Python` · `NumPy` · `Pandas` · `SciPy` · `Scikit-learn` · `Matplotlib` · `h5py` · `gprMax`
 
----
-
-### 5. Distribuição Uniforme com parâmetro de localização
-
-O último experimento estuda uma distribuição uniforme definida em um intervalo dependente de um parâmetro desconhecido.
-
-Foram novamente utilizados:
-
-* Simulação de Monte Carlo;
-* Média e variância amostrais;
-* Método dos Momentos;
-* Máxima Verossimilhança;
-* Cálculo do erro das estimativas.
-
-O experimento mostra a capacidade dos métodos estatísticos de recuperar parâmetros desconhecidos a partir de observações aleatórias.
+📁 [`ML on Detection of a PEC Cylinder via GPR`](./ML-on-detection-of-a-PEC-cylinder-via-GPR/)
 
 ---
 
-## 📈 Principais conceitos explorados
+## 🚧 Projetos futuros
 
-| Conceito                      | Aplicação                             |
-| ----------------------------- | ------------------------------------- |
-| Variável aleatória            | Geração das amostras                  |
-| Distribuição de probabilidade | Modelagem dos dados                   |
-| Média amostral                | Estimativa de localização             |
-| Variância                     | Medida de dispersão                   |
-| Método dos Momentos           | Estimação de parâmetros               |
-| Máxima Verossimilhança        | Estimação de parâmetros               |
-| Simulação de Monte Carlo      | Geração de amostras                   |
-| Erro relativo                 | Avaliação dos estimadores             |
-| Histograma                    | Análise da distribuição amostral      |
-| PDF                           | Comparação com a distribuição teórica |
-| Otimização numérica           | Resolução dos problemas de estimação  |
+Este portfólio será expandido gradualmente para incluir projetos em diferentes áreas da Ciência de Dados.
 
----
+Alguns dos projetos que pretendo desenvolver incluem:
 
-## 🛠️ Tecnologias utilizadas
-
-### Python
-
-A linguagem principal utilizada no projeto foi Python.
-
-### NumPy
-
-Utilizado para:
-
-* geração de números aleatórios;
-* operações vetoriais;
-* cálculo de médias e variâncias;
-* manipulação de arrays;
-* construção das simulações.
-
-### SciPy
-
-Utilizado principalmente para métodos numéricos de otimização e resolução de sistemas necessários à estimação dos parâmetros.
-
-### Matplotlib
-
-Utilizado para:
-
-* histogramas;
-* funções densidade de probabilidade;
-* comparação entre resultados teóricos e experimentais;
-* visualização do comportamento dos estimadores.
+* [ ] Análise exploratória de dados (EDA)
+* [ ] Projeto de análise de dados com Pandas
+* [ ] SQL para análise de dados
+* [ ] Dashboard utilizando Power BI
+* [ ] Projeto completo de Machine Learning
+* [ ] Comparação entre diferentes algoritmos de classificação
+* [ ] Projeto de regressão
+* [ ] Séries temporais
+* [ ] Análise estatística aplicada a dados reais
+* [ ] Projeto envolvendo processamento de sinais
+* [ ] Projeto de previsão baseado em dados reais
 
 ---
 
-## 📂 Estrutura do projeto
+# 📈 Minha abordagem
+
+Procuro desenvolver os projetos seguindo uma estrutura próxima daquela utilizada em problemas reais de Data Science:
 
 ```text
-.
-├── Exercício 1.ipynb
-├── Exercício 2.ipynb
-├── Exercício 3.ipynb
-├── Exercício 4.ipynb
-├── Exercício 6.ipynb
-└── README.md
+                 Problema
+                    │
+                    ▼
+            Entendimento dos dados
+                    │
+                    ▼
+          Limpeza e preparação
+                    │
+                    ▼
+         Análise exploratória (EDA)
+                    │
+                    ▼
+          Engenharia de atributos
+                    │
+                    ▼
+       ┌────────────┴────────────┐
+       │                         │
+       ▼                         ▼
+   Estatística              Machine Learning
+       │                         │
+       └────────────┬────────────┘
+                    ▼
+             Avaliação do modelo
+                    │
+                    ▼
+           Interpretação dos
+               resultados
+                    │
+                    ▼
+             Comunicação
+             dos resultados
 ```
 
-Cada notebook contém um experimento independente relacionado à estimação estatística.
+A preocupação não é apenas construir um modelo que produza uma previsão, mas também compreender **os dados, as hipóteses, as limitações e os motivos pelos quais o modelo apresenta determinado resultado**.
 
 ---
 
-## 🔬 Metodologia
+# 🔬 Formação científica aplicada a Data Science
 
-De maneira geral, os experimentos seguem o fluxo:
+Minha formação acadêmica influencia diretamente a maneira como abordo problemas de dados.
 
-```text
-Distribuição teórica
-        ↓
-Geração de amostras aleatórias
-        ↓
-Análise estatística dos dados
-        ↓
-Cálculo de estatísticas amostrais
-        ↓
-Estimação dos parâmetros
-        ↓
-Método dos Momentos ─────┐
-                         ├──→ Comparação
-Máxima Verossimilhança ──┘
-        ↓
-Avaliação do erro
-        ↓
-Visualização dos resultados
-```
+A Física fornece uma forte base quantitativa para trabalhar com:
 
-Essa estrutura representa um fluxo bastante comum em problemas de análise de dados: partir de um modelo estatístico, gerar ou obter observações, extrair informações dos dados e utilizar métodos estatísticos para realizar inferências.
+* Modelos matemáticos;
+* Probabilidade;
+* Estatística;
+* Equações diferenciais;
+* Métodos numéricos;
+* Simulações;
+* Análise de sinais;
+* Otimização.
+
+Essa experiência é complementada pelo desenvolvimento de projetos utilizando Python e ferramentas de Data Science.
+
+Um exemplo dessa integração é o projeto de GPR, no qual um problema físico é transformado em um problema de **extração de características, inferência estatística e classificação supervisionada**.
 
 ---
 
-## 📊 Resultados e observações
+# 📚 Formação
 
-Os experimentos mostram, de maneira prática, que as estimativas obtidas a partir de amostras finitas não necessariamente coincidem exatamente com os parâmetros utilizados na geração dos dados.
+### 🎓 Mestrado em Engenharia Elétrica — UFMG
 
-Por exemplo, no experimento com a distribuição de Laplace, uma amostra de 100 observações produziu estimativas próximas dos parâmetros teóricos, mas apresentou pequenas diferenças decorrentes da aleatoriedade da amostra.
+**2026 – atual**
 
-Já nos experimentos com 100.000 observações da distribuição uniforme, os parâmetros estimados apresentaram erros significativamente menores.
+Ênfase em sistemas de computação e eletromagnetismo aplicado.
 
-Isso evidencia computacionalmente um comportamento importante da inferência estatística:
+### 🎓 Bacharelado em Física — UFMG
 
-> À medida que a quantidade de observações aumenta, as estatísticas amostrais tendem a fornecer informações cada vez mais próximas das características da população.
+**2022 – 2025**
 
----
+### 🎓 Técnico em Eletrotécnica — UFV
 
-## 💡 Relação com Data Science
-
-Embora os experimentos sejam fundamentados em estatística matemática, os conceitos estudados são diretamente aplicáveis à Ciência de Dados.
-
-A estimação de parâmetros está presente em diversas etapas de projetos reais, como:
-
-* modelagem estatística;
-* análise exploratória de dados;
-* inferência estatística;
-* construção de modelos probabilísticos;
-* machine learning;
-* avaliação de incerteza;
-* análise de distribuições;
-* detecção de padrões.
-
-O projeto também reforça competências importantes para Data Science, como **programação científica, manipulação de dados, análise estatística, visualização e interpretação quantitativa**.
-
-Essa base estatística também é utilizada em projetos mais complexos de aprendizado de máquina, como o projeto de detecção de cilindros condutores em dados de Ground Penetrating Radar (GPR), no qual foram utilizados atributos estatísticos extraídos dos sinais e modelos supervisionados de classificação.
+**2019 – 2021**
 
 ---
 
-## 🚀 Possíveis melhorias
-
-Como continuação deste projeto, algumas análises podem ser adicionadas:
-
-* [ ] Comparar viés dos estimadores;
-* [ ] Comparar variância dos estimadores;
-* [ ] Estudar o erro quadrático médio (MSE);
-* [ ] Realizar múltiplas simulações de Monte Carlo;
-* [ ] Construir intervalos de confiança;
-* [ ] Analisar consistência dos estimadores;
-* [ ] Estudar a convergência dos estimadores;
-* [ ] Comparar diferentes tamanhos de amostra;
-* [ ] Automatizar os experimentos;
-* [ ] Criar uma estrutura de código reutilizável;
-* [ ] Adicionar testes unitários;
-* [ ] Desenvolver visualizações mais interativas.
-
----
-
-## 📚 Referências e fundamentos
-
-Os experimentos foram desenvolvidos como estudos práticos relacionados aos fundamentos de **Probabilidade, Processos Estocásticos e Inferência Estatística**.
-
-O projeto faz parte de uma trajetória acadêmica que envolve modelagem estatística, simulação computacional e análise de dados. Entre os trabalhos desenvolvidos nesse contexto está um estudo de processos estocásticos aplicado à detecção de objetos enterrados utilizando GPR e Machine Learning.
-
----
-
-## 👨‍💻 Autor
+# 📫 Contato
 
 **André Fabiano Silva Rios**
 
-Estudante de Mestrado em Engenharia Elétrica | Física | Ciência de Dados
+📍 Belo Horizonte — MG, Brasil
 
-Interesses:
+📧 Email: `andrefsr1902@gmail.com`
 
-* Data Science
-* Machine Learning
-* Estatística
-* Modelagem computacional
-* Análise de dados
-* Python
-* Computação científica
-* Eletromagnetismo computacional
+🔗 [Lattes](https://lattes.cnpq.br/8042101507553883)
 
 ---
 
-## 📌 Outros projetos
+## ⭐ Objetivo
 
-Este repositório faz parte de um portfólio voltado ao desenvolvimento de competências em **Data Science, Machine Learning e análise estatística**.
+Este portfólio representa minha evolução na área de **Data Science**.
 
-Entre os projetos relacionados está:
+A proposta é documentar não apenas os resultados finais, mas também o processo de desenvolvimento dos projetos: **problema → dados → análise → modelagem → avaliação → interpretação**.
 
-**Detection of a PEC Cylinder via GPR and Machine Learning**
+Novos projetos serão adicionados à medida que avanço nos estudos e desenvolvo novas aplicações em **Estatística, Data Science e Machine Learning**.
 
-Projeto envolvendo simulação de Ground Penetrating Radar, geração de meios aleatórios, extração de características estatísticas e classificação supervisionada utilizando Machine Learning. O trabalho utiliza Python, NumPy, SciPy, Matplotlib, Pandas, h5py e Scikit-learn.
+---
+
+> *Turning data into knowledge through mathematics, statistics and computation.*
