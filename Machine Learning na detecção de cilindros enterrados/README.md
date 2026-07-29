@@ -119,7 +119,7 @@ Possible improvements include:
 
 **André Fabiano S. Rios**
 
-Bachelor's student in Physics with research interests in:
+Master degree's student in Eletrical Engineering with research interests in:
 
 * Data Science
 * Machine Learning
