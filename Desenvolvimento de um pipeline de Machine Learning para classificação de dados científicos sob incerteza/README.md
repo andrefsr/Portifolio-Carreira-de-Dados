@@ -1,259 +1,215 @@
-<<<<<<< HEAD
-# Machine Learning for Buried Cylinder Detection using Ground Penetrating Radar (GPR)
+# Machine Learning Pipeline for Scientific Data Classification
 
-## Overview
+A complete Data Science project focused on building, training and evaluating a Machine Learning model capable of classifying scientific data generated from numerical simulations.
 
-This project investigates the application of Machine Learning techniques to detect buried conducting cylinders from Ground Penetrating Radar (GPR) data generated through numerical simulations.
-
-Unlike conventional approaches that rely on manual interpretation of radargrams, this work uses supervised learning algorithms to automatically identify the presence of buried objects, even under uncertain soil conditions.
-
-The project combines computational electromagnetics, stochastic modeling and data science to develop a robust detection framework.
+Although the application domain is Ground Penetrating Radar (GPR), the primary goal of this repository is to demonstrate an end-to-end Data Science workflow, including data generation, preprocessing, feature engineering, model development and performance evaluation.
 
 ---
 
-## Motivation
+# Project Overview
 
-Ground Penetrating Radar is widely used in applications such as:
+This project addresses a binary classification problem where the objective is to determine whether a buried conducting cylinder is present in a simulated Ground Penetrating Radar (GPR) scan.
 
-* Underground utility mapping
-* Geological investigations
-* Archaeological exploration
-* Landmine detection
-* Civil engineering inspections
+The complete workflow follows a typical Machine Learning pipeline:
 
-However, heterogeneous soils introduce significant variability in radar responses, making manual interpretation difficult. This project explores how Machine Learning can improve detection reliability in uncertain environments.
+* Data generation
+* Data preprocessing
+* Feature engineering
+* Model training
+* Model validation
+* Performance evaluation
+* Result interpretation
+
+The repository was developed to showcase practical Data Science skills applied to a real-world scientific problem.
 
 ---
 
-## Dataset
+# Problem Statement
 
-The dataset was generated using **gprMax**, an open-source electromagnetic simulator based on the Finite-Difference Time-Domain (FDTD) method.
+Detecting buried objects from Ground Penetrating Radar data is a challenging classification task due to the variability introduced by heterogeneous soil properties.
 
-Each simulation contains:
+Instead of relying on manual interpretation of radargrams, this project investigates how supervised Machine Learning models can automatically learn discriminative patterns from the data.
 
-* Random heterogeneous soil models
+From a Data Science perspective, the challenge consists of learning a robust decision boundary under noisy and uncertain conditions.
+
+---
+
+# Dataset
+
+The dataset was generated using numerical simulations performed with **gprMax**, an electromagnetic simulator based on the Finite-Difference Time-Domain (FDTD) method.
+
+Each sample contains:
+
+* Simulated radar response
+* Label indicating cylinder presence or absence
+* Randomized soil conditions
 * Different moisture distributions
-* Presence or absence of a buried conducting cylinder
-* Corresponding radargram
 
-The resulting dataset consists of labeled radargrams for binary classification.
+This synthetic dataset allows the evaluation of Machine Learning algorithms under controlled but realistic scenarios.
 
 ---
 
-## Data Processing
+# Data Pipeline
 
-The workflow includes:
-
-1. Generation of stochastic soil models.
-2. FDTD electromagnetic simulations.
-3. Extraction of radargrams.
-4. Data preprocessing.
-5. Feature construction.
-6. Training and validation of Machine Learning models.
-
----
-
-## Machine Learning Model
-
-The main algorithm used is:
-
-* Random Forest Classifier
-
-Model evaluation includes:
-
-* Accuracy
-* Confusion Matrix
-* Precision
-* Recall
-* F1-score
-
-The Random Forest was chosen due to its robustness, interpretability and strong performance on structured datasets.
-
----
-
-## Results
-
-The trained model achieved approximately **92% classification accuracy**, demonstrating that Machine Learning can successfully detect buried conducting cylinders despite variability introduced by heterogeneous soil properties.
-
----
-
-## Technologies
-
-* Python
-* NumPy
-* Pandas
-* Scikit-learn
-* Matplotlib
-* gprMax
-* HDF5
-
----
-
-## Repository Structure
+The project follows the workflow below.
 
 ```text
-├── data/
-├── notebooks/
-├── src/
-├── models/
-├── figures/
-├── results/
-└── README.md
+Numerical Simulations
+        │
+        ▼
+ Radargram Generation
+        │
+        ▼
+ Data Extraction (HDF5)
+        │
+        ▼
+ Data Preprocessing
+        │
+        ▼
+ Feature Engineering
+        │
+        ▼
+ Train/Test Split
+        │
+        ▼
+ Random Forest Model
+        │
+        ▼
+ Performance Evaluation
 ```
 
 ---
 
-## Future Work
+# Machine Learning Workflow
 
-Possible improvements include:
+The following stages were implemented:
 
-* Convolutional Neural Networks (CNNs)
-* Gradient Boosting methods (XGBoost, LightGBM)
-* Explainable AI (SHAP)
-* Hyperparameter optimization
-* Detection of multiple buried objects
-* Estimation of object position and depth
+## Data Collection
 
----
+* Synthetic dataset generation
+* Labeled observations
+* Controlled variability
 
-## Author
+## Data Preprocessing
 
-**André Fabiano S. Rios**
+* Radargram extraction
+* Data formatting
+* Input standardization
 
-Bachelor's student in Physics with research interests in:
+## Feature Engineering
 
-* Data Science
-* Machine Learning
-* Computational Electromagnetics
-* Ground Penetrating Radar
-* Scientific Computing
-=======
-# Machine Learning for Buried Cylinder Detection using Ground Penetrating Radar (GPR)
+* Construction of numerical feature vectors
+* Preparation of model inputs
 
-## Overview
+## Model Training
 
-This project investigates the application of Machine Learning techniques to detect buried conducting cylinders from Ground Penetrating Radar (GPR) data generated through numerical simulations.
-
-Unlike conventional approaches that rely on manual interpretation of radargrams, this work uses supervised learning algorithms to automatically identify the presence of buried objects, even under uncertain soil conditions.
-
-The project combines computational electromagnetics, stochastic modeling and data science to develop a robust detection framework.
-
----
-
-## Motivation
-
-Ground Penetrating Radar is widely used in applications such as:
-
-* Underground utility mapping
-* Geological investigations
-* Archaeological exploration
-* Landmine detection
-* Civil engineering inspections
-
-However, heterogeneous soils introduce significant variability in radar responses, making manual interpretation difficult. This project explores how Machine Learning can improve detection reliability in uncertain environments.
-
----
-
-## Dataset
-
-The dataset was generated using **gprMax**, an open-source electromagnetic simulator based on the Finite-Difference Time-Domain (FDTD) method.
-
-Each simulation contains:
-
-* Random heterogeneous soil models
-* Different moisture distributions
-* Presence or absence of a buried conducting cylinder
-* Corresponding radargram
-
-The resulting dataset consists of labeled radargrams for binary classification.
-
----
-
-## Data Processing
-
-The workflow includes:
-
-1. Generation of stochastic soil models.
-2. FDTD electromagnetic simulations.
-3. Extraction of radargrams.
-4. Data preprocessing.
-5. Feature construction.
-6. Training and validation of Machine Learning models.
-
----
-
-## Machine Learning Model
-
-The main algorithm used is:
+Algorithm used:
 
 * Random Forest Classifier
 
-Model evaluation includes:
+Reasons for choosing Random Forest:
+
+* Robust to noisy data
+* Handles nonlinear relationships
+* Low preprocessing requirements
+* High interpretability
+* Excellent baseline model
+
+---
+
+# Model Evaluation
+
+The model was evaluated using standard classification metrics:
 
 * Accuracy
-* Confusion Matrix
 * Precision
 * Recall
 * F1-score
+* Confusion Matrix
 
-The Random Forest was chosen due to its robustness, interpretability and strong performance on structured datasets.
-
----
-
-## Results
-
-The trained model achieved approximately **92% classification accuracy**, demonstrating that Machine Learning can successfully detect buried conducting cylinders despite variability introduced by heterogeneous soil properties.
+These metrics provide a comprehensive assessment of the classifier performance beyond simple accuracy.
 
 ---
 
-## Technologies
+# Results
+
+The Random Forest classifier achieved approximately:
+
+* Accuracy: **92%**
+
+The results indicate that Machine Learning models can successfully identify buried targets despite variability caused by heterogeneous environments.
+
+---
+
+# Technologies
+
+Programming
 
 * Python
+
+Data Manipulation
+
 * NumPy
 * Pandas
+
+Machine Learning
+
 * Scikit-learn
+
+Visualization
+
 * Matplotlib
-* gprMax
+
+Scientific Computing
+
 * HDF5
+* gprMax
 
 ---
 
-## Repository Structure
+# Skills Demonstrated
 
-```text
-├── data/
-├── notebooks/
-├── src/
-├── models/
-├── figures/
-├── results/
-└── README.md
-```
+This project demonstrates practical experience with:
+
+* End-to-end Machine Learning pipelines
+* Scientific data preprocessing
+* Feature engineering
+* Binary classification
+* Model evaluation
+* Performance metrics
+* Data visualization
+* Reproducible research
+* Python for Data Science
 
 ---
 
-## Future Work
+# Future Improvements
 
-Possible improvements include:
+Possible extensions include:
 
-* Convolutional Neural Networks (CNNs)
-* Gradient Boosting methods (XGBoost, LightGBM)
+* XGBoost
+* LightGBM
+* Support Vector Machines
+* Deep Learning (CNNs)
 * Explainable AI (SHAP)
 * Hyperparameter optimization
-* Detection of multiple buried objects
-* Estimation of object position and depth
+* Cross-validation
+* Automated ML pipelines
 
 ---
 
-## Author
+# About Me
 
-**André Fabiano S. Rios**
+I am passionate about applying Data Science and Machine Learning to solve challenging real-world problems.
 
-Master degree's student in Eletrical Engineering with research interests in:
+My interests include:
 
 * Data Science
 * Machine Learning
-* Computational Electromagnetics
-* Ground Penetrating Radar
+* Statistical Learning
 * Scientific Computing
->>>>>>> d033a7968b4019f98f60833e0281f92f9f87bf1e
+* Artificial Intelligence
+* Python Development
+
+I am currently building projects that demonstrate practical experience in data analysis, predictive modeling and machine learning for scientific applications.
+
